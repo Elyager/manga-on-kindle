@@ -1,17 +1,26 @@
+#!/usr/bin/env node
 var utils = require('./lib/submanga_parser');
-var optionSelected = process.argv[2];
-var url = process.argv[3];
+var chalk = require('chalk')
+var program = require('commander')
 
-if (optionSelected == '-vol'){
-	console.log('one volume');
-	utils.getSingleVolume(url);
-}
-else if (optionSelected == '-all') {
-	console.log('all volumes');
-	utils.getAllManga(url);
-}
-else {
-	console.log('Please use -all (all volumes) or -vol (single volume) an a valid url');
-	console.log('Example: node index.js -vol http://submanga.com/Nanatsu_no_Taizai/1/233906');
-	console.log('Example: node index.js -all http://submanga.com/Nanatsu_no_Taizai/completa');
-}
+program
+  .arguments('<url>')
+  .option('-v, --volume', 'The volume url')
+  .option('-a, --all', 'The all manga url')
+  .action(function(url) {
+		if (program.volume) {
+			console.log(chalk.blue('one volume'));
+			utils.getSingleVolume(url);
+		}
+		else if (program.all){
+			console.log(chalk.blue('all'));
+			console.log(chalk.red('working on it...'))
+			// 	utils.getAllManga(url);
+		}
+	})
+ .parse(process.argv);
+
+ if (program.volume === undefined && program.all === undefined) {
+	 console.log('Incorrect command, please use -h for more information')
+	 process.exit(1);
+ }
