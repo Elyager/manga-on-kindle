@@ -1,5 +1,5 @@
 # mangadownlaod
-Search and download manga from several manga pages and transform to a readable kindle format.
+Crawler to download manga from submanga.com and other sites in the future.
 
 ##Features
 
