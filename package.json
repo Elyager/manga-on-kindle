@@ -1,7 +1,11 @@
 {
   "name": "mangadownload",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "An scrapper to download manga from submanga.com and other sites in the future",
+=======
+  "description": "An scrapper to download images from submanga.com",
+>>>>>>> 811153671992dffffe81051f3523cf2f42fcc2a1
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
