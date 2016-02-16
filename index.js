@@ -12,7 +12,7 @@ program
 			console.log(chalk.blue('one volume'));
 			utils.getSingleVolume(url);
 		}
-		else if (program.all){
+		else if (program.all) {
 			console.log(chalk.blue('all'));
 			console.log(chalk.red('working on it...'))
 			// 	utils.getAllManga(url);
