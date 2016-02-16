@@ -1,6 +1,6 @@
 {
   "name": "mangadownload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Crawler to download manga from submanga.com and other sites in the future",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,9 @@
   },
   "author": "@elyager",
   "license": "ISC",
-  "url" : "https://github.com/Elyager/mangadownload",
+  "bugs": {
+    "url": "https://github.com/Elyager/mangadownload/issues"
+  },
   "devDependencies": {},
   "dependencies": {
     "async": "^1.5.0",
