@@ -8,6 +8,7 @@
   },
   "author": "@elyager",
   "license": "ISC",
+  "url" : "https://github.com/Elyager/mangadownload",
   "devDependencies": {},
   "dependencies": {
     "async": "^1.5.0",
