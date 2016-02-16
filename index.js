@@ -9,7 +9,7 @@ program
   .option('-a, --all', 'The all manga url')
   .action(function(url) {
 		if (program.volume) {
-			console.log(chalk.blue('one volume'));
+			console.log(chalk.green('one volume'));
 			utils.getSingleVolume(url);
 		}
 		else if (program.all){
