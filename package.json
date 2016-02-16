@@ -6,8 +6,27 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "@elyager",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elyager/mangadownload"
+  },
+  "author": {
+    "name": "Erik Elyager",
+    "email": "elyager@gmail.com",
+    "url": "aprendelobasico.com"
+  },
+  "bin": {
+    "mangadownload": "index.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "crawler",
+    "manga",
+    "submanga"
+  ],
   "bugs": {
     "url": "https://github.com/Elyager/mangadownload/issues"
   },
